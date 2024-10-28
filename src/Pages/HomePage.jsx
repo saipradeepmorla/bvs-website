@@ -6,11 +6,13 @@ import FullStackCourseSection from "../components/home/FullStackCourseSection";
 import TechLogos from "../components/home/TechLogos";
 import ReviewsSection from "../components/ReviewsSection";
 import ServicesWeOffer from "../components/ServicesWeOffer";
+import YouTube from "../components/home/Youtube";
 
 const HomePage = () => {
   return (
     <>
       <Carousel />
+      <YouTube />
       <About />
       <ServicesWeOffer />
       <TechLogos />

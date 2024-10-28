@@ -9,8 +9,9 @@ const ContactForm = () => {
 
     const formEle = document.querySelector("form");
     const formData = new FormData(formEle);
+
     try {
-      const response = await fetch("Your Google sheet apps script api ", {
+      const response = await fetch(import.meta.env.VITE_API_KEY, {
         method: "POST",
         body: formData,
       });
@@ -22,6 +23,7 @@ const ContactForm = () => {
       }
     } catch (error) {
       console.log(error);
+
       setDisable(false);
     }
   };
