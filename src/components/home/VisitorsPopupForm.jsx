@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 
 const VisitorsPopupForm = ({ isOpen, onClose }) => {
   const [disable, setDisable] = useState(false);
@@ -28,6 +29,12 @@ const VisitorsPopupForm = ({ isOpen, onClose }) => {
       });
       const result = await response.text();
       if (result) {
+        Swal.fire({
+          title: "Thank You For Contact Us",
+          text: "Our Team Contact You Soon",
+          icon: "Success",
+          confirmButtonColor: "#00FF00",
+        });
         console.log(result);
         handleDownloadPDF();
         onClose();
