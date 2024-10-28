@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import "./YouTube.css";
 function YouTube() {
   const [videos, setVideos] = useState([]);
   const [visibleVideos, setVisibleVideos] = useState(4);
@@ -52,7 +52,7 @@ function YouTube() {
   return (
     <div>
       {/* Video card grid */}
-      <div className="video-grid">
+      <div className="video-grid m-5">
         {videos.slice(0, visibleVideos).map((video) => (
           <div key={video.id} className="video-card">
             <iframe
@@ -96,41 +96,6 @@ function YouTube() {
           </button>
         )}
       </div>
-
-      {/* CSS for grid and card layout */}
-      <style jsx>{`
-        .video-grid {
-          display: grid;
-          gap: 20px;
-          grid-template-columns: 1fr 1fr; /* Default to two columns for mobile */
-        }
-
-        @media (min-width: 768px) {
-          .video-grid {
-            grid-template-columns: 1fr 1fr 1fr 1fr; /* Four columns on desktop */
-          }
-        }
-
-        .video-card {
-          background-color: #f9f9f9;
-          border-radius: 8px;
-          box-shadow: 0px 14px 18px rgba(0, 0, 0, 0.3);
-          padding: 10px;
-          text-align: center;
-          transition: transform 0.2s ease;
-        }
-
-        .video-card:hover {
-          transform: translateY(-5px); /* Lift effect on hover */
-        }
-
-        .video-title {
-          font-size: 16px;
-          font-weight: 600;
-          margin-top: 10px;
-          color: #333;
-        }
-      `}</style>
     </div>
   );
 }
