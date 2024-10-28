@@ -1,5 +1,3 @@
-import { FiCheck } from "react-icons/fi";
-
 const Project = () => {
   const services = [
     {
