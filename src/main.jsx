@@ -13,6 +13,7 @@ import Services from './Pages/Services.jsx'
 import Courses from './Pages/Courses.jsx'
 import AboutUs from './Pages/AboutUs.jsx'
 import Contact from './Pages/Contact.jsx'
+import DigitalMarketing from "./Pages/DigitalMarketing.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route  path="/courses" element={<Courses/>}/>
       <Route  path="/aboutus" element={<AboutUs/>}/>
       <Route  path="/contact" element={<Contact/>}/>
+      <Route path="/digitalmarketing" element={<DigitalMarketing/>}/>
     </Route>
   )
 )
