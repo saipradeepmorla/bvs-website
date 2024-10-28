@@ -7,6 +7,7 @@ import TechLogos from "../components/home/TechLogos";
 import ReviewsSection from "../components/ReviewsSection";
 import ServicesWeOffer from "../components/ServicesWeOffer";
 import YouTube from "../components/home/Youtube";
+import OurRecording from "../components/home/OurRecording";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Carousel />
       <YouTube />
       <About />
+      <OurRecording />
       <ServicesWeOffer />
       <TechLogos />
       <CustomAppSection />

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./YouTube.css";
-function YouTube() {
+function OurRecording() {
   const [videos, setVideos] = useState([]);
   const [visibleVideos, setVisibleVideos] = useState(4);
   const [initialVideos, setInitialVideos] = useState(4);
@@ -100,4 +100,4 @@ function YouTube() {
   );
 }
 
-export default YouTube;
+export default OurRecording;
