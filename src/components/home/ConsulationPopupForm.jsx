@@ -3,7 +3,6 @@ import React, { useState } from "react";
 const ConsultationPopupForm = ({ isOpen, onClose }) => {
   const [disable, setDisable] = useState(false);
 
- 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setDisable(true);
@@ -11,13 +10,10 @@ const ConsultationPopupForm = ({ isOpen, onClose }) => {
     const formEle = document.querySelector("form");
     const formData = new FormData(formEle);
     try {
-      const response = await fetch(
-        "Your Google sheet apps script api",
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
+      const response = await fetch(import.meta.env.VITE_API_KEY, {
+        method: "POST",
+        body: formData,
+      });
       const result = await response.text();
       if (result) {
         console.log(result);
