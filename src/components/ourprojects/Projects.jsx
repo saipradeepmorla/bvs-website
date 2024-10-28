@@ -11,54 +11,34 @@ const Project = () => {
       image: "/images/sapthagiritraders.png",
       description:
         "This website is built using WordPress as its content management system.",
-      features: [
-        "HTML, CSS, JavaScript",
-        "React and Node.js",
-        "Responsive Design",
-      ],
+
       link: "https://sapthagiritraders.com/",
     },
     {
       image: "/images/mr-optics.png",
       description: "This website is built using ReactJS and Tailwind Css.",
-      features: [
-        "SEO Optimization",
-        "Social Media Marketing",
-        "Content Strategy",
-      ],
+
       link: "https://mr-optics.in/",
     },
     {
       image: "/images/tractionlifts.png",
       description:
         "We develop responsive, user-friendly websites HTML and Css And JAVAScript",
-      features: [
-        "High-quality performance",
-        "Seamless user experiences",
-        "Custom business solutions",
-      ],
+
       link: "https://tractionlifts.in",
     },
     {
       image: "/images/srikalagolashambhavi.png",
       description:
         "We create custom, high-performance applications Using React With Firebase",
-      features: [
-        "Android, iOS, and PC platforms",
-        "Seamless functionality",
-        "Custom application development",
-      ],
+
       link: "https://srikalagolashambhavi.com",
     },
     {
       image: "/images/businessvictorysolutions.png",
       description:
         "We provide expert social media marketing services to boost your brand's online presence",
-      features: [
-        "Engage target audience",
-        "Drive measurable results",
-        "Coverage across major platforms",
-      ],
+
       link: "https://businessvictorysolutions.in",
     },
   ];
