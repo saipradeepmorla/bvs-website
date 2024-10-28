@@ -13,20 +13,32 @@ const services = [
   {
     icon: <MdOutlineDeveloperMode className="text-blue-500" />,
     title: "Application Development",
+    path: "/services/project",
   },
-  { icon: <MdWeb className="text-red-500" />, title: "Website Development" },
+  {
+    icon: <MdWeb className="text-red-500" />,
+    title: "Website Development",
+    path: "/services/project",
+  },
   {
     icon: <MdCampaign className="text-yellow-500" />,
     title: "Digital Marketing",
+    path: "/services/digital-marketing",
   },
   {
     icon: <MdChat className="text-purple-500" />,
     title: "Social Media Handling",
+    path: "/services/social-media-handling",
   },
-  { icon: <MdAdsClick className="text-pink-500" />, title: "Ad's Services" },
+  {
+    icon: <MdAdsClick className="text-pink-500" />,
+    title: "Ad's Services",
+    path: "https://addtheadd.com/",
+  },
   {
     icon: <MdLaptopMac className="text-green-500" />,
     title: "Technical Training",
+    path: "/services/technical-training",
   },
 ];
 
@@ -42,7 +54,7 @@ const ServicesWeOffer = () => {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
           {services.map((service, index) => (
             <Link
-              to="/services"
+              to={service.path}
               key={index}
               className="aspect-square bg-white rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer group"
             >
