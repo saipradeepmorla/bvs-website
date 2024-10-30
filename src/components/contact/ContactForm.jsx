@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 
 const ContactForm = () => {
   const [disable, setDisable] = useState(false);
@@ -17,6 +18,12 @@ const ContactForm = () => {
       });
       const result = await response.text();
       if (result) {
+        Swal.fire({
+          title: "Thank You For Contact Us",
+          text: "Our Team Contact You Soon",
+          icon: "Success",
+          confirmButtonColor: "#00FF00",
+        });
         console.log(result);
         formEle.reset(); //to reset the form after submitting
         setDisable(false);

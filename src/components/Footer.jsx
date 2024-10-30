@@ -55,10 +55,10 @@ const Footer = () => {
       icon: FaTwitter,
       link: "https://twitter.com",
     },
-    {
-      icon: FaGithub,
-      link: "https://github.com",
-    },
+    // {
+    //   icon: FaGithub,
+    //   link: "https://github.com",
+    // },
   ];
 
   return (
@@ -164,10 +164,10 @@ const Footer = () => {
         </div>
 
         <div className="pt-4 text-center border-t border-gray-700">
-          Icons by{" "}
+          {/* Icons by{" "}
           <a href="https://icons8.com" target="_blank">
             Icons8
-          </a>
+          </a> */}
           <p className="text-sm">
             &copy; {currentYear} BVS. All rights reserved. Empowering businesses
             with innovative solutions.
