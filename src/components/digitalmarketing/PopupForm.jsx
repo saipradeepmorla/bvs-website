@@ -40,7 +40,7 @@ const PopupForm = ({ isOpen, onClose, selectedIcon }) => {
         <h2 className="text-2xl font-bold mb-4">{selectedIcon.name}</h2>
         <img src={selectedIcon.imageUrl} className="w-full"  alt={selectedIcon.name} />
       
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit}>
           <input type="hidden" name="formType" defaultValue="digitalmarketing" />
           <input type="hidden" name="platform" defaultValue={selectedIcon.name} />
 
