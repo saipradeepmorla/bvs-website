@@ -15,6 +15,7 @@ import AboutUs from "./Pages/AboutUs.jsx";
 import Contact from "./Pages/Contact.jsx";
 import Project from "./components/ourprojects/Projects.jsx";
 import DigitalMarketing from "./Pages/DigitalMarketing.jsx";
+import SocialMediaHandling from "./Pages/SocialMediaHandling.jsx";
 
 
 const router = createBrowserRouter(
@@ -28,6 +29,7 @@ const router = createBrowserRouter(
       <Route path="/contact" element={<Contact />} />
       <Route path="/services/project" element={<Project />} />
       <Route path="/services/digital-marketing" element={<DigitalMarketing/>}/>
+      <Route path="/services/social-media-handling" element={<SocialMediaHandling/>}/>
     </Route>
   )
 );
