@@ -1,5 +1,6 @@
 import React from "react";
 import { FiCheck } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const ExploreOurServices = () => {
   const services = [
@@ -8,6 +9,7 @@ const ExploreOurServices = () => {
       image: "/images/app-development.png",
       description: "Learn to build mobile apps for iOS and Android",
       features: ["Swift and Kotlin", "UI/UX Design", "App Store Publishing"],
+      path: "/services/project",
     },
     {
       title: "Web Development",
@@ -18,6 +20,7 @@ const ExploreOurServices = () => {
         "React and Node.js",
         "Responsive Design",
       ],
+      path: "/services/project",
     },
     {
       title: "Digital Marketing",
@@ -28,6 +31,7 @@ const ExploreOurServices = () => {
         "Social Media Marketing",
         "Content Strategy",
       ],
+      path: "/services/digital-marketing",
     },
     {
       title: "Social Media Handling",
@@ -39,6 +43,7 @@ const ExploreOurServices = () => {
         "Seamless user experiences",
         "Custom business solutions",
       ],
+      path: "/services/social-media-handling",
     },
     {
       title: "Ad's Services",
@@ -50,6 +55,7 @@ const ExploreOurServices = () => {
         "Seamless functionality",
         "Custom application development",
       ],
+      path: "https://addtheadd.com/",
     },
     {
       title: "Technical Training",
@@ -61,6 +67,7 @@ const ExploreOurServices = () => {
         "Drive measurable results",
         "Coverage across major platforms",
       ],
+      path: "/courses",
     },
   ];
 
@@ -101,9 +108,9 @@ const ExploreOurServices = () => {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full px-4 py-2 text-white transition duration-300 bg-green-600 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+                <Link to={service.path} className="w-full inline-block text-center px-4 py-2 text-white transition duration-300 bg-green-600 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
                   Learn More
-                </button>
+                </Link>
               </div>
             </div>
           ))}
