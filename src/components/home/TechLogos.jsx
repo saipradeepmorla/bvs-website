@@ -84,7 +84,7 @@ const TechLogos = () => {
                 className="flex-shrink-0 mx-4 md:mx-6 lg:mx-8 transition-all duration-300 ease-in-out"
               >
                 <logo.Icon 
-                  className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
+                  className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 transition-all duration-300 ease-in-out"
                   style={{ 
                     color: logo.color,
                     opacity: 1

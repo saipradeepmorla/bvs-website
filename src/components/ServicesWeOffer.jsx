@@ -38,7 +38,7 @@ const services = [
   {
     icon: <MdLaptopMac className="text-green-500" />,
     title: "Technical Training",
-    path: "/services/technical-training",
+    path: "/courses",
   },
 ];
 
